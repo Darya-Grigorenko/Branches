@@ -1,0 +1,720 @@
+{
+	"info": {
+		"_postman_id": "b1cc2952-d9f8-4684-b0e7-41f4588fb0bd",
+		"name": "1_homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Darya&age=25",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Darya"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Darya",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "25",
+									"type": "default"
+								},
+								{
+									"key": "salary",
+									"value": "2500",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_3?name=Darya&age=25&salary=1500",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Darya"
+								},
+								{
+									"key": "age",
+									"value": "25"
+								},
+								{
+									"key": "salary",
+									"value": "1500"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:25:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Darya\",\n    \"25\"\n]"
+				}
+			]
+		},
+		{
+			"name": "New Request-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Darya",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "25",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Darya",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "25",
+									"type": "default"
+								},
+								{
+									"key": "salary",
+									"value": "1500",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_3",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:34:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"25\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"u_salary_1_5_year\": 6000\n    },\n    \"name\": \"Darya\",\n    \"salary\": 1500\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request-3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Darya&age=25&weight=57",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Darya"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "weight",
+							"value": "57"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_1?name=Darya&age=25&weight=57",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Darya"
+								},
+								{
+									"key": "age",
+									"value": "25"
+								},
+								{
+									"key": "weight",
+									"value": "57"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:36:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": 25,\n    \"daily_food\": 0.684,\n    \"daily_sleep\": 142.5,\n    \"name\": \"Darya\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request-4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Darya&age=25&salary=1500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Darya"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "salary",
+							"value": "1500"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name=Darya&age=25&salary=1500",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Darya"
+								},
+								{
+									"key": "age",
+									"value": "25"
+								},
+								{
+									"key": "salary",
+									"value": "1500"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:37:02 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_age\": 25,\n        \"u_name\": [\n            \"Darya\",\n            1500,\n            25\n        ],\n        \"u_salary_5_years\": 6300\n    },\n    \"qa_salary_after_1.5_year\": 4950,\n    \"qa_salary_after_12_months\": 4050.0000000000005,\n    \"qa_salary_after_3.5_years\": 5700,\n    \"qa_salary_after_6_months\": 3000,\n    \"start_qa_salary\": 1500\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request-5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Darya&age=25&salary=1500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Darya"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "salary",
+							"value": "1500"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Darya&age=25&salary=1500",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Darya"
+								},
+								{
+									"key": "age",
+									"value": "25"
+								},
+								{
+									"key": "salary",
+									"value": "1500"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:37:49 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"25\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"pets\": {\n            \"cat\": {\n                \"age\": 3,\n                \"name\": \"Sunny\"\n            },\n            \"dog\": {\n                \"age\": 4,\n                \"name\": \"Luky\"\n            }\n        },\n        \"u_salary_1_5_year\": 6000\n    },\n    \"name\": \"Darya\",\n    \"salary\": 1500\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request-6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Darya&age=25&salary=1500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Darya"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "salary",
+							"value": "1500"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_4?name=Darya&age=25&salary=1500",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Darya"
+								},
+								{
+									"key": "age",
+									"value": "25"
+								},
+								{
+									"key": "salary",
+									"value": "1500"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:38:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": 25,\n    \"name\": \"Darya\",\n    \"salary\": [\n        1500,\n        \"3000\",\n        \"4500\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request-7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Darya",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "25",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request-7",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Darya",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "25",
+									"type": "default"
+								},
+								{
+									"key": "salary",
+									"value": "1500",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_2",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 14:40:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_age\": 25,\n        \"u_name\": [\n            \"Darya\",\n            1500,\n            25\n        ],\n        \"u_salary_5_years\": 6300\n    },\n    \"qa_salary_after_1.5_year\": 4950,\n    \"qa_salary_after_12_months\": 4050.0000000000005,\n    \"qa_salary_after_3.5_years\": 5700,\n    \"qa_salary_after_6_months\": 3000,\n    \"start_qa_salary\": 1500\n}"
+				}
+			]
+		}
+	]
+}
